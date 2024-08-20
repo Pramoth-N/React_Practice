@@ -5,6 +5,7 @@ const CompB = (props) => {
     <div>
         <h1>CompB</h1>
         <h2>{props.State.val}</h2>
+        <h2>Data entered in Input === {props.State.data}</h2>
     </div>
   )
 }

@@ -7,9 +7,15 @@ class RegForm extends Component {
         lname : "",
         phno : "",
         RegNo : "727723EUIT162",
-        dept : "IT"
+        dept : "IT",
+        sub:false
     };
   render() {
+    // if(this.state.sub){
+    //     return(
+    //     <Display State = {this.state}/>
+    //     )
+    // }
     return (
       <div>
         <form>
@@ -61,9 +67,19 @@ class RegForm extends Component {
             placeholder='IT'
             ></input>
             <br></br>
-            <input type='submit'></input>
+            {/* <input type='submit'></input> */}
         </form>
-        <Display State = {this.state}/>
+            <button onClick={()=>{
+                this.setState({sub:true})
+            }}>click me</button>
+        {/* <Display State = {this.state}/> */}
+        <div>
+            {
+                this.state.sub && (
+                    <Display State = {this.state} />
+                )
+            }
+        </div>
       </div>
     )
   }
