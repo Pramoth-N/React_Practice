@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import List from './Session8/List';
+import App from './App';
+// import List from './Session8/List';
 // import Parent from './Props/Parent';
 // import Counter from './Counter/Counter';
 // import Task1 from './Session6/Task1';
@@ -13,7 +14,7 @@ import List from './Session8/List';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <List />
+    <App />
   </React.StrictMode>
 );
 
