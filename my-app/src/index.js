@@ -2,17 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import List from './Session8/List';
 // import Parent from './Props/Parent';
 // import Counter from './Counter/Counter';
 // import Task1 from './Session6/Task1';
 // import Name from './State/Name';
-import CompA from './Session7/CompA';
+// import CompA from './Session7/CompA';
+// import RegForm from './Session7/RegForm/RegForm';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <Parent /> */}
-    <CompA />
+    <List />
   </React.StrictMode>
 );
 
